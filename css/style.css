@@ -1,0 +1,278 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  height: 700px;
+  color: white;
+}
+header .header-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 700px;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: brightness(40%);
+  z-index: -1;
+}
+header nav {
+  width: 90%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  top: 0;
+  z-index: 2;
+}
+header nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+header nav .navbar {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+#header {
+  width: 50%;
+  height: 100%;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+#header h1 {
+  font-size: 50px;
+}
+#header p {
+  margin: 50px 0;
+  line-height: 20px;
+}
+#header a {
+  text-decoration: underline;
+}
+#nasa-mission {
+  display: flex;
+  background-color: #2d2d2d;
+  height: 700px;
+  color: #fff;
+  padding-top: 60px;
+}
+#nasa-mission aside {
+  width: 60%;
+  position: relative;
+}
+#nasa-mission aside .box {
+  width: 300px;
+  height: 350px;
+  background-color: #525252;
+}
+#nasa-mission aside .mand {
+  position: absolute;
+  left: 60px;
+  top: 40px;
+  z-index: 1;
+}
+#nasa-mission aside .masjin {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+}
+#nasa-mission aside span {
+  position: absolute;
+  left: 30%;
+  top: 90%;
+}
+#nasa-mission main {
+  width: 40%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+#nasa-mission main h1 {
+  margin-bottom: 10px;
+}
+#nasa-mission main button {
+  margin-top: auto;
+  width: 200px;
+  height: 30px;
+  background-color: #a7d7fc;
+  outline: none;
+  border: none;
+}
+#nasa-insight {
+  background-color: #4a4a4a;
+  width: 100%;
+  height: 700px;
+}
+#nasa-insight > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+#nasa-insight h1 {
+  color: #fff;
+  font-size: 40px;
+}
+#nasa-insight h1 span {
+  border-bottom: 2px solid #fd3333;
+  padding-bottom: 20px;
+}
+#nasa-insight iframe {
+  width: 100%;
+  height: 500px;
+}
+#content {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding-bottom: 60px;
+}
+#content .nasa-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+#content .nasa-text div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#content .nasa-text div a {
+  text-decoration: underline;
+  color: #fd3333;
+}
+#content .why-mars {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+#content .why-mars div:first-child {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#content .why-mars div:first-child button {
+  width: 200px;
+  height: 35px;
+  outline: none;
+  border: none;
+  background-color: #a7d7fc;
+}
+#content .why-mars div:last-child {
+  width: 55%;
+  position: relative;
+}
+#content .why-mars div:last-child .box {
+  width: 300px;
+  height: 350px;
+  background-color: #525252;
+}
+#content .why-mars div:last-child .boximg {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+#content .why-mars div:last-child .mand {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+#content .why-mars div:last-child .masjin {
+  position: absolute;
+  top: 120px;
+  right: 200px;
+}
+#img-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 180px;
+  width: 100%;
+}
+#img-content div {
+  width: 48%;
+  padding: 10px;
+  height: 400px;
+}
+#img-content .first-img,
+#img-content .second-img {
+  position: relative;
+}
+#img-content .first-img .first-bg,
+#img-content .second-img .second-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(40%) grayscale(100%);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+#img-content .second-img .second-text,
+#img-content .first-img .first-text {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 30px;
+}
+#img-content .first-img .first-bg {
+  background-image: url(../img/fly.jpg);
+}
+#img-content .second-img .second-bg {
+  background-image: url(../img/flag.jpg);
+}
+footer {
+  width: 100%;
+  height: 550px;
+}
+footer .footer-img {
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  height: 200px;
+  color: #fff;
+  font-size: 18px;
+}
+footer .social {
+  margin-left: auto;
+  display: flex;
+  gap: 5px;
+}
